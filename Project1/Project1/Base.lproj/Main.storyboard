@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ddp-El-IKH" userLabel="Image-Name">
-                                        <rect key="frame" x="0.0" y="0.0" width="299" height="208.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="250.66666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jon Snow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaM-vg-7Dv">
                                                 <rect key="frame" x="66.666666666666671" y="0.0" width="165.66666666666663" height="40.333333333333336"/>
@@ -34,17 +34,18 @@
                                                 <size key="shadowOffset" width="4" height="5"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JonSnow-img" translatesAutoresizingMaskIntoConstraints="NO" id="znM-M9-tjF">
-                                                <rect key="frame" x="0.0" y="40.333333333333343" width="299" height="168"/>
+                                                <rect key="frame" x="0.0" y="40.333333333333329" width="299" height="210.33333333333337"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="znM-M9-tjF" firstAttribute="centerY" secondItem="ddp-El-IKH" secondAttribute="centerY" id="85e-IV-Ta8"/>
                                             <constraint firstItem="PaM-vg-7Dv" firstAttribute="leading" secondItem="ddp-El-IKH" secondAttribute="leading" constant="66.666666666666686" id="F7Y-9Y-L9e"/>
-                                            <constraint firstAttribute="height" constant="208.33000000000001" id="Mc0-hP-Zw3"/>
+                                            <constraint firstItem="znM-M9-tjF" firstAttribute="centerX" secondItem="ddp-El-IKH" secondAttribute="centerX" id="eIF-Ri-SCC"/>
                                             <constraint firstAttribute="width" constant="299" id="uUh-HJ-rZ3"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3w4-HK-OZA" userLabel="Buttons">
-                                        <rect key="frame" x="74.000000000000014" y="239.33333333333331" width="151.33333333333337" height="161.33333333333331"/>
+                                        <rect key="frame" x="74.000000000000014" y="281.66666666666669" width="151.33333333333337" height="119"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8g-qm-oka">
                                                 <rect key="frame" x="23.666666666666671" y="0.0" width="104" height="34.333333333333336"/>
@@ -58,7 +59,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp8-wI-3Nw">
-                                                <rect key="frame" x="0.0" y="42.333333333333343" width="151.33333333333334" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="42.333333333333314" width="151.33333333333334" height="34.333333333333343"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34.333333333333343" id="S71-3r-uKO"/>
                                                 </constraints>
@@ -69,7 +70,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-N8-lqE">
-                                                <rect key="frame" x="17.666666666666671" y="84.666666666666657" width="116.00000000000001" height="34.333333333333343"/>
+                                                <rect key="frame" x="17.666666666666671" y="84.666666666666629" width="116.00000000000001" height="34.333333333333343"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34.333333333333343" id="jg5-gn-EBb"/>
                                                 </constraints>
@@ -79,20 +80,11 @@
                                                     <segue destination="8UB-X4-YVA" kind="show" id="Tut-As-0cj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-9H-21T">
-                                                <rect key="frame" x="14.333333333333321" y="126.99999999999996" width="122.66666666666669" height="34.333333333333329"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Personal Info"/>
-                                                <connections>
-                                                    <segue destination="EMu-oa-sHP" kind="show" id="7gg-JR-m9F"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="A8g-qm-oka" firstAttribute="leading" secondItem="3w4-HK-OZA" secondAttribute="leading" constant="23.666666666666657" id="JEu-5q-ypG"/>
                                             <constraint firstAttribute="width" constant="151.33000000000001" id="YVt-yK-Mz2"/>
                                             <constraint firstItem="WCe-N8-lqE" firstAttribute="leading" secondItem="3w4-HK-OZA" secondAttribute="leading" constant="17.666666666666679" id="oYs-bZ-pcp"/>
-                                            <constraint firstItem="adD-9H-21T" firstAttribute="leading" secondItem="3w4-HK-OZA" secondAttribute="leading" constant="14.333333333333314" id="v5g-ue-3pg"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -119,21 +111,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="cBK-rU-Ude">
-                                <rect key="frame" x="75" y="103" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhz-aL-gH8">
-                                <rect key="frame" x="75" y="256" width="263" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Jon Snow, born Aegon Targaryen, is the son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. After successfully capturing a wight and presenting it to the Lannisters as proof that the Army of the Dead are real, Jon pledges himself and his army to Daenerys Targaryen.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DG0-6d-Oh8">
+                                <rect key="frame" x="20" y="123" width="200" height="675"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="cBK-rU-Ude">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ZAa-hD-Nhb"/>
+                                            <constraint firstAttribute="height" constant="200" id="wos-rv-QR0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhz-aL-gH8">
+                                        <rect key="frame" x="0.0" y="225" width="180" height="450"/>
+                                        <string key="text">Jon Snow, born Aegon Targaryen, is the son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. After successfully capturing a wight and presenting it to the Lannisters as proof that the Army of the Dead are real, Jon pledges himself and his army to Daenerys Targaryen.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nhz-aL-gH8" firstAttribute="leading" secondItem="DG0-6d-Oh8" secondAttribute="leading" constant="20" id="6Nj-e8-eej"/>
+                                    <constraint firstItem="cBK-rU-Ude" firstAttribute="centerX" secondItem="DG0-6d-Oh8" secondAttribute="centerX" id="Apn-pn-hui"/>
+                                    <constraint firstItem="cBK-rU-Ude" firstAttribute="centerY" secondItem="DG0-6d-Oh8" secondAttribute="centerY" id="Iot-Db-Soq"/>
+                                    <constraint firstItem="Nhz-aL-gH8" firstAttribute="top" secondItem="cBK-rU-Ude" secondAttribute="bottom" constant="50" id="KSk-tc-rCZ"/>
+                                    <constraint firstItem="Nhz-aL-gH8" firstAttribute="centerY" secondItem="DG0-6d-Oh8" secondAttribute="centerY" id="Mgb-50-6oT"/>
+                                    <constraint firstItem="Nhz-aL-gH8" firstAttribute="centerX" secondItem="DG0-6d-Oh8" secondAttribute="centerX" id="aB5-VB-DJT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nhz-aL-gH8" secondAttribute="trailing" constant="20" id="gHP-7N-X6E"/>
+                                    <constraint firstItem="cBK-rU-Ude" firstAttribute="centerY" secondItem="DG0-6d-Oh8" secondAttribute="centerY" id="jfg-H0-yJx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nhz-aL-gH8" secondAttribute="bottom" constant="20" id="r04-4d-A6M"/>
+                                    <constraint firstItem="cBK-rU-Ude" firstAttribute="centerX" secondItem="DG0-6d-Oh8" secondAttribute="centerX" id="uIg-DQ-GtM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3a-sO-rZN"/>
                         <color key="backgroundColor" red="0.91961902380000005" green="0.85351288319999996" blue="0.71370077129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DG0-6d-Oh8" firstAttribute="leading" secondItem="K3a-sO-rZN" secondAttribute="leading" constant="20" id="JMP-LO-Gzg"/>
+                            <constraint firstItem="DG0-6d-Oh8" firstAttribute="centerX" secondItem="alq-vi-a3m" secondAttribute="centerX" id="SSc-5p-g6X"/>
+                            <constraint firstItem="K3a-sO-rZN" firstAttribute="trailing" secondItem="DG0-6d-Oh8" secondAttribute="trailing" constant="20" id="St7-eE-JIe"/>
+                            <constraint firstItem="DG0-6d-Oh8" firstAttribute="centerY" secondItem="alq-vi-a3m" secondAttribute="centerY" id="nIY-od-tVV"/>
+                            <constraint firstItem="DG0-6d-Oh8" firstAttribute="top" secondItem="K3a-sO-rZN" secondAttribute="top" constant="20" id="p8A-Ni-RTV"/>
+                            <constraint firstItem="K3a-sO-rZN" firstAttribute="bottom" secondItem="DG0-6d-Oh8" secondAttribute="bottom" constant="20" id="zyY-6P-N68"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OVm-hh-ZEN" userLabel="Main"/>
                 </viewController>
@@ -149,58 +168,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhL-zh-8IT">
-                                <rect key="frame" x="15" y="326" width="363" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="l6X-Hj-wBv">
+                                <rect key="frame" x="20" y="20" width="240" height="778"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Died:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPi-HD-Q4t">
-                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="302 AC at Castle Black" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-nE-cuP">
-                                        <rect key="frame" x="188.66666666666663" y="0.0" width="174.33333333333337" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="towerOfJoy" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-ol-e2P">
+                                        <rect key="frame" x="20" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="BMa-xE-H6X"/>
+                                            <constraint firstAttribute="width" constant="200" id="EPI-r0-mjk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jSH-JD-JOD">
+                                        <rect key="frame" x="0.0" y="235" width="240" height="484"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Born:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfJ-Gh-WBt">
+                                                <rect key="frame" x="0.0" y="230" width="51" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="281 AC (age 24) in the Tower of Joy" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-xi-pE6">
+                                                <rect key="frame" x="59" y="232" width="181" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhL-zh-8IT">
+                                        <rect key="frame" x="0.0" y="754" width="240" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Died:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPi-HD-Q4t">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="302 AC at Castle Black" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-nE-cuP">
+                                                <rect key="frame" x="66.333333333333329" y="0.0" width="173.66666666666669" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yag-ol-e2P" firstAttribute="top" secondItem="l6X-Hj-wBv" secondAttribute="top" constant="20" id="G8l-2W-c4G"/>
+                                    <constraint firstItem="Yag-ol-e2P" firstAttribute="leading" secondItem="l6X-Hj-wBv" secondAttribute="leading" constant="20" id="No2-04-BUE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yag-ol-e2P" secondAttribute="trailing" constant="20" id="d0V-yB-vzm"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jSH-JD-JOD">
-                                <rect key="frame" x="30" y="251" width="348" height="24"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Born:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfJ-Gh-WBt">
-                                        <rect key="frame" x="0.0" y="0.0" width="69" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="281 AC (age 24) in the Tower of Joy" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsV-xi-pE6">
-                                        <rect key="frame" x="77" y="2" width="271" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="towerOfJoy" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-ol-e2P">
-                                <rect key="frame" x="76" y="103" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8D4-3a-Znb"/>
                         <color key="backgroundColor" red="0.91961902380000005" green="0.85351288319999996" blue="0.71370077129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="jSH-JD-JOD" firstAttribute="leading" secondItem="8D4-3a-Znb" secondAttribute="leading" constant="15" id="2bb-TH-oRP"/>
-                            <constraint firstItem="8D4-3a-Znb" firstAttribute="trailing" secondItem="zhL-zh-8IT" secondAttribute="trailing" constant="30" id="D3m-yd-ZOX"/>
-                            <constraint firstItem="8D4-3a-Znb" firstAttribute="trailing" secondItem="jSH-JD-JOD" secondAttribute="trailing" constant="30" id="D5G-IY-fRJ"/>
-                            <constraint firstItem="zhL-zh-8IT" firstAttribute="leading" secondItem="8D4-3a-Znb" secondAttribute="leading" constant="30" id="Dlv-cD-vun"/>
-                            <constraint firstItem="jSH-JD-JOD" firstAttribute="top" secondItem="8D4-3a-Znb" secondAttribute="top" constant="148" id="FGc-YA-cdU"/>
-                            <constraint firstItem="zhL-zh-8IT" firstAttribute="leading" secondItem="8D4-3a-Znb" secondAttribute="leading" constant="15" id="GYr-Oh-gUv"/>
-                            <constraint firstItem="8D4-3a-Znb" firstAttribute="trailing" secondItem="jSH-JD-JOD" secondAttribute="trailing" constant="15" id="lFo-GO-moy"/>
-                            <constraint firstItem="jSH-JD-JOD" firstAttribute="leading" secondItem="8D4-3a-Znb" secondAttribute="leading" constant="30" id="pOo-Z0-792"/>
-                            <constraint firstItem="8D4-3a-Znb" firstAttribute="trailing" secondItem="zhL-zh-8IT" secondAttribute="trailing" constant="15" id="xeq-Cj-Tau"/>
-                            <constraint firstItem="zhL-zh-8IT" firstAttribute="top" secondItem="jSH-JD-JOD" secondAttribute="bottom" constant="51" id="zRm-wV-8Xk"/>
+                            <constraint firstItem="8D4-3a-Znb" firstAttribute="bottom" secondItem="l6X-Hj-wBv" secondAttribute="bottom" constant="100" id="8jZ-f1-EsT"/>
+                            <constraint firstItem="l6X-Hj-wBv" firstAttribute="top" secondItem="80m-yg-ck5" secondAttribute="top" constant="20" id="H7f-ET-Y69"/>
+                            <constraint firstItem="8D4-3a-Znb" firstAttribute="trailing" secondItem="l6X-Hj-wBv" secondAttribute="trailing" constant="20" id="K9w-xT-iRJ"/>
+                            <constraint firstItem="l6X-Hj-wBv" firstAttribute="top" secondItem="80m-yg-ck5" secondAttribute="top" constant="20" id="Pso-gM-QC3"/>
+                            <constraint firstItem="l6X-Hj-wBv" firstAttribute="leading" secondItem="80m-yg-ck5" secondAttribute="leading" constant="20" id="Z3f-6L-1am"/>
+                            <constraint firstItem="8D4-3a-Znb" firstAttribute="bottom" secondItem="l6X-Hj-wBv" secondAttribute="bottom" constant="20" id="aZW-4l-k0M"/>
+                            <constraint firstItem="l6X-Hj-wBv" firstAttribute="top" secondItem="8D4-3a-Znb" secondAttribute="top" constant="20" id="cvj-GU-ncd"/>
+                            <constraint firstItem="8D4-3a-Znb" firstAttribute="trailing" secondItem="l6X-Hj-wBv" secondAttribute="trailing" constant="20" id="dKM-5R-hzr"/>
+                            <constraint firstItem="l6X-Hj-wBv" firstAttribute="leading" secondItem="80m-yg-ck5" secondAttribute="leading" constant="20" id="tnf-WH-f7U"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9eA-GE-e76"/>
@@ -217,65 +248,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allegiance:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1T-Oy-mXt">
-                                <rect key="frame" x="152" y="210" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="House Targaryen" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-3X-G3N">
-                                <rect key="frame" x="137" y="239" width="174.33333333333326" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="House Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4li-SR-l7G">
-                                <rect key="frame" x="152" y="262" width="174.33333333333326" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Night's Watch" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nba-lZ-yho">
-                                <rect key="frame" x="144" y="286" width="174.33333333333303" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title(s):" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4g-h1-7hg">
-                                <rect key="frame" x="165" y="342" width="65" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{Jeor Mormont} (Lord Commander)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT3-vx-oEJ">
-                                <rect key="frame" x="70" y="371" width="269" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{Robb Stark} (King in the North)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-EB-Y9S">
-                                <rect key="frame" x="84" y="393" width="242" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{Ramsay Bolton} (Warden of the North)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggO-X1-Lhg">
-                                <rect key="frame" x="76" y="414" width="297" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="uG3-IV-jaX">
+                                <rect key="frame" x="50" y="153" width="293" height="615"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allegiance:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1T-Oy-mXt">
+                                        <rect key="frame" x="101.33333333333334" y="0.0" width="90.666666666666657" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Targaryen" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-3X-G3N">
+                                        <rect key="frame" x="82" y="26.333333333333343" width="129" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4li-SR-l7G">
+                                        <rect key="frame" x="100" y="52.666666666666657" width="93.333333333333314" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night's Watch" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nba-lZ-yho">
+                                        <rect key="frame" x="93" y="79" width="107.33333333333331" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title(s):" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4g-h1-7hg">
+                                        <rect key="frame" x="114.33333333333334" y="105.33333333333331" width="64.666666666666657" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Jeor Mormont} (Lord Commander)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT3-vx-oEJ">
+                                        <rect key="frame" x="12.333333333333343" y="131.66666666666669" width="268.66666666666663" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Robb Stark} (King in the North)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-EB-Y9S">
+                                        <rect key="frame" x="26.000000000000014" y="158" width="241.33333333333337" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Ramsay Bolton} (Warden of the North)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggO-X1-Lhg">
+                                        <rect key="frame" x="0.0" y="184.33333333333331" width="293" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-9Q-Chi">
+                                        <rect key="frame" x="26.666666666666686" y="210.66666666666671" width="240" height="404.33333333333326"/>
+                                        <color key="backgroundColor" red="0.91961902380000005" green="0.85351288319999996" blue="0.71370077129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ziq-mU-jnQ"/>
                         <color key="backgroundColor" red="0.91961902380000005" green="0.85351288319999996" blue="0.71370077129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="leading" secondItem="1SV-KV-r7i" secondAttribute="leading" constant="50" id="E0j-16-L9z"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="centerY" secondItem="1SV-KV-r7i" secondAttribute="centerY" id="H8T-w9-AET"/>
+                            <constraint firstItem="ziq-mU-jnQ" firstAttribute="bottom" secondItem="uG3-IV-jaX" secondAttribute="bottom" constant="50" id="NVl-7g-tRs"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="leading" secondItem="ziq-mU-jnQ" secondAttribute="leading" constant="50" id="Pkt-z0-mRW"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="top" secondItem="1SV-KV-r7i" secondAttribute="top" constant="153" id="Pmc-gc-AeK"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="centerX" secondItem="1SV-KV-r7i" secondAttribute="centerX" id="dAh-5x-iOI"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="centerY" secondItem="1SV-KV-r7i" secondAttribute="centerY" id="eEj-3a-wPV"/>
+                            <constraint firstItem="ziq-mU-jnQ" firstAttribute="trailing" secondItem="uG3-IV-jaX" secondAttribute="trailing" constant="50" id="iIL-9S-Lzt"/>
+                            <constraint firstAttribute="trailing" secondItem="uG3-IV-jaX" secondAttribute="trailing" constant="50" id="j1h-fv-NnF"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="centerX" secondItem="1SV-KV-r7i" secondAttribute="centerX" id="n6U-6q-Zl3"/>
+                            <constraint firstItem="uG3-IV-jaX" firstAttribute="top" secondItem="ziq-mU-jnQ" secondAttribute="top" constant="50" id="orQ-8c-yWh"/>
+                            <constraint firstAttribute="bottom" secondItem="uG3-IV-jaX" secondAttribute="bottom" constant="84" id="rLd-fd-9Za"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tn4-Bx-yW6"/>
                 </viewController>
@@ -287,142 +333,32 @@
         <scene sceneID="hZF-kF-IZ6">
             <objects>
                 <viewController id="EMu-oa-sHP" customClass="fourthViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qV6-px-eHO">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="1fY-cH-a66">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Also known as:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDK-zi-dna">
-                                <rect key="frame" x="129" y="172" width="123" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JonSnow-img" translatesAutoresizingMaskIntoConstraints="NO" id="oMR-bf-cyn">
+                                <rect key="frame" x="76" y="133" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lord Snow" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUC-WP-3bf">
-                                <rect key="frame" x="151" y="201" width="174.33333333333326" height="24"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JonSnow-img" translatesAutoresizingMaskIntoConstraints="NO" id="GEN-HZ-gZq">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEB-ux-nCv">
-                                <rect key="frame" x="103" y="222" width="190" height="24"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JonSnow-img" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-cH-mwJ">
+                                <rect key="frame" x="76" y="600" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Bastard of Winterfell
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGY-1f-QcL">
-                                <rect key="frame" x="151" y="247" width="174.33333333333303" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">King Crow
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Culture:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUT-aA-ueJ">
-                                <rect key="frame" x="158" y="306" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Northern" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-do-KJz">
-                                <rect key="frame" x="155" y="326" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Religion:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mm-MD-dVx">
-                                <rect key="frame" x="156" y="389" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Old Gods of the Forest" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyY-Xc-uUs">
-                                <rect key="frame" x="110" y="416" width="173" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Father:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J91-hl-0Ce">
-                                <rect key="frame" x="160" y="475" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eddard Stark (adoptive)" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qad-DH-NZL">
-                                <rect key="frame" x="106" y="504" width="181" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mother:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kty-xE-joA">
-                                <rect key="frame" x="158" y="546" width="65" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lyanna Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1q-XP-g8C">
-                                <rect key="frame" x="142" y="575" width="98" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siblings:" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P7-L5-Jg1">
-                                <rect key="frame" x="155" y="632" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Robb Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-ne-i4k">
-                                <rect key="frame" x="149" y="661" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sansa Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO9-UE-Ud6">
-                                <rect key="frame" x="147" y="690" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arya Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epv-x4-rUw">
-                                <rect key="frame" x="150" y="719" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rickon Stark" textAlignment="justified" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-Qo-Q7h">
-                                <rect key="frame" x="141" y="748" width="96" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="IzA-l4-gMH"/>
-                        <color key="backgroundColor" red="0.91961902380000005" green="0.85351288319999996" blue="0.71370077129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
+                        <viewLayoutGuide key="safeArea" id="sd2-yi-Caa"/>
+                        <viewLayoutGuide key="contentLayoutGuide" id="1Fx-Wh-O0d"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="bni-eX-KZy"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" id="ey5-H5-2Np"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpL-Kq-OZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="432"/>
+            <point key="canvasLocation" x="1696.9465648854962" y="431.69014084507046"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lNF-tP-55X">
